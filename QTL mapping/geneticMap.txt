@@ -1,0 +1,14 @@
+marker	chr	pos
+chr01_0	chr01	0.0
+chr01_1	chr01	10.0
+chr01_2	chr01	20.0
+chr01_3	chr01	30.0
+chr01_4	chr01	40.0
+chr01_5	chr01	50.0
+chr01_6	chr01	60.0
+chr01_7	chr01	70.0
+chr01_8	chr01	80.0
+chr01_9	chr01	90.0
+chr01_10	chr01	100.0
+chr01_11	chr01	110.0
+chr01_12	chr01	120.0

@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="550.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="GUI.InputController">
+   <children>
+      <SplitPane dividerPositions="0.1457286432160804" layoutX="1.0" orientation="VERTICAL" prefHeight="400.0" prefWidth="550.0">
+        <items>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+               <children>
+                  <ImageView fitHeight="136.0" fitWidth="144.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Images/logo.jpg" />
+                     </image>
+                  </ImageView>
+                  <Button fx:id="LogOutBtn" layoutX="497.0" layoutY="34.0" mnemonicParsing="false" onAction="#LogOut" style="-fx-background-color: transport;" text="Log out" />
+               </children>
+            </AnchorPane>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="313.0" prefWidth="598.0">
+               <children>
+                  <Label layoutX="3.0" layoutY="1.0" prefHeight="13.0" prefWidth="132.0" text="Home -&gt; Input Data">
+                     <font>
+                        <Font size="10.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="GenoBox" layoutX="197.0" layoutY="74.0" prefHeight="26.0" prefWidth="107.0" promptText="Genotype" />
+                  <Button fx:id="NextStepBtn" layoutX="452.0" layoutY="287.0" mnemonicParsing="false" onAction="#NextStep" text="Next Step" />
+                  <TextField fx:id="geneticMapBox" layoutX="47.0" layoutY="74.0" prefHeight="26.0" prefWidth="107.0" promptText="Genetic map" />
+                  <TextField fx:id="TraitBox" layoutX="351.0" layoutY="74.0" prefHeight="26.0" prefWidth="114.0" promptText="Triat" />
+                  <Button fx:id="DisplayTraitBtn" layoutX="381.0" layoutY="113.0" mnemonicParsing="false" onAction="#displayTrait" text="Display" />
+                  <Button fx:id="DisplayGenoBtn" layoutX="223.0" layoutY="113.0" mnemonicParsing="false" onAction="#displayGeno" text="Display" />
+                  <Button fx:id="DisplayMapBtn" layoutX="73.0" layoutY="113.0" mnemonicParsing="false" onAction="#displayMap" text="Display" />
+                  <Button fx:id="UploadTraitBtn" layoutX="465.0" layoutY="72.0" mnemonicParsing="false" onAction="#uploadTrait" prefHeight="26.0" prefWidth="34.0">
+                     <graphic>
+                        <ImageView fitHeight="24.0" fitWidth="21.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../Images/fileupload.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                  <Button fx:id="UploadGenoBtn" layoutX="304.0" layoutY="72.0" mnemonicParsing="false" onAction="#uploadGeno" prefHeight="26.0" prefWidth="34.0">
+                     <graphic>
+                        <ImageView fitHeight="24.0" fitWidth="21.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../Images/fileupload.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                  <Button fx:id="UploadMapBtn" layoutX="154.0" layoutY="72.0" mnemonicParsing="false" onAction="#uploadMap" prefHeight="26.0" prefWidth="34.0">
+                     <graphic>
+                        <ImageView fitHeight="24.0" fitWidth="21.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../Images/fileupload.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                  <ComboBox fx:id="inputTypecombox" layoutX="26.0" layoutY="28.0" onAction="#inputTypecobox" prefWidth="150.0" promptText="Select input type" />
+                  <Label fx:id="LableChrLen" layoutX="48.0" layoutY="83.0" prefHeight="17.0" prefWidth="114.0" text="Chormosome length" />
+                  <TextField fx:id="ChrLengthtxt" layoutX="262.0" layoutY="83.0" prefHeight="25.0" prefWidth="68.0" />
+                  <Label fx:id="LableNumMarkers" layoutX="47.0" layoutY="114.0" text="Number of markers" />
+                  <TextField fx:id="NumMarkerstxt" layoutX="262.0" layoutY="119.0" prefHeight="25.0" prefWidth="68.0" />
+                  <Label fx:id="LableMeanVar" layoutX="47.0" layoutY="151.0" text="Mean , var" />
+                  <TextField fx:id="meantxt" layoutX="225.0" layoutY="152.0" prefHeight="25.0" prefWidth="68.0" />
+                  <TextField fx:id="vartxt" layoutX="301.0" layoutY="151.0" prefHeight="25.0" prefWidth="68.0" />
+                  <Label fx:id="LableNumQTL" layoutX="48.0" layoutY="186.0" text="Marker of QTL" />
+                  <TextField fx:id="numQTLtxt" layoutX="263.0" layoutY="184.0" prefHeight="25.0" prefWidth="68.0" />
+                  <Label fx:id="LableAlleMean" layoutX="48.0" layoutY="221.0" prefHeight="17.0" prefWidth="184.0" text="Additive effect of allele 1 to mean" />
+                  <TextField fx:id="AlleMeantxt" layoutX="263.0" layoutY="217.0" prefHeight="25.0" prefWidth="68.0" />
+                  <Button fx:id="AutofillBtn" layoutX="465.0" layoutY="28.0" mnemonicParsing="false" onAction="#Autofill" text="Autofill" />
+                  <TextField fx:id="AlleVartxt" layoutX="263.0" layoutY="256.0" prefHeight="25.0" prefWidth="68.0" />
+                  <Label fx:id="LableAlleVar" layoutX="48.0" layoutY="258.0" text="Additive effect of allele 1 to variance" />
+               </children>
+            </AnchorPane>
+        </items>
+      </SplitPane>
+   </children>
+</AnchorPane>

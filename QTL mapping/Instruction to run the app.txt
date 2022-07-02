@@ -1,0 +1,11 @@
+Instruction to run the app:
+1- open cmd 
+2- install the following libraries(for python): numpy, matplotlib, scipy, statistics, statsmodels, mlxtend
+ 
+3-open the project in eclipse
+4- add javafx library to the project 
+(left click on the project -> properties -> JAVA build path -> Libraries -> add javafx library)
+
+Run the project from class HomeController
+Username: admin
+Password: 123

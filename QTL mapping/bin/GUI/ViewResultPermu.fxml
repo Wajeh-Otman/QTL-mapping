@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="550.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="GUI.ViewResultPermuController">
+   <children>
+      <SplitPane dividerPositions="0.1457286432160804" layoutX="1.0" orientation="VERTICAL" prefHeight="400.0" prefWidth="550.0">
+        <items>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+               <children>
+                  <ImageView fitHeight="136.0" fitWidth="144.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Images/logo.jpg" />
+                     </image>
+                  </ImageView>
+                  <Button fx:id="LogOutBtn" layoutX="495.0" layoutY="33.0" mnemonicParsing="false" onAction="#LogOut" style="-fx-background-color: transport;" text="Log out" />
+                  <Button fx:id="NewSerach" layoutX="411.0" layoutY="34.0" mnemonicParsing="false" onAction="#newSearch" style="-fx-background-color: transport;" text="New search" />
+               </children>
+            </AnchorPane>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="313.0" prefWidth="598.0">
+               <children>
+                  <Label layoutX="2.0" prefHeight="13.0" prefWidth="132.0" text="Home -&gt; View Results">
+                     <font>
+                        <Font size="10.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="68.0" layoutY="54.0" prefHeight="25.0" prefWidth="236.0" text="Chromosomal Permutation test result:">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="resultStudent" layoutX="315.0" layoutY="119.0" prefHeight="17.0" prefWidth="157.0">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="68.0" layoutY="174.0" prefHeight="25.0" prefWidth="114.0" text="F-test">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="64.0" layoutY="116.0" prefHeight="25.0" prefWidth="236.0" text="Student test">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="62.0" layoutY="235.0" prefHeight="25.0" prefWidth="144.0" text="ANOVA test">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="resultF" layoutX="315.0" layoutY="177.0" prefHeight="17.0" prefWidth="157.0">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="resultANOVA" layoutX="315.0" layoutY="238.0" prefHeight="17.0" prefWidth="157.0">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <Button fx:id="ShowRes" layoutX="451.0" layoutY="23.0" mnemonicParsing="false" onAction="#ShowResult" text="Show Result" />
+               </children>
+            </AnchorPane>
+        </items>
+      </SplitPane>
+   </children>
+</AnchorPane>

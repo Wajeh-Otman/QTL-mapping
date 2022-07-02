@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="581.0" prefWidth="864.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="GUI.ViewResultController">
+   <children>
+      <SplitPane dividerPositions="0.10362694300518134" layoutX="1.0" orientation="VERTICAL" prefHeight="581.0" prefWidth="864.0">
+        <items>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+               <children>
+                  <ImageView fitHeight="136.0" fitWidth="144.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Images/logo.jpg" />
+                     </image>
+                  </ImageView>
+                  <Button fx:id="LogOutBtn" layoutX="808.0" layoutY="35.0" mnemonicParsing="false" onAction="#LogOut" style="-fx-background-color: transport;" text="Log out" />
+                  <Button fx:id="NewSerach" layoutX="732.0" layoutY="36.0" mnemonicParsing="false" onAction="#newSearch" style="-fx-background-color: transport;" text="New Serach" />
+               </children>
+            </AnchorPane>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="313.0" prefWidth="598.0">
+               <children>
+                  <Label layoutX="2.0" prefHeight="13.0" prefWidth="132.0" text="Home -&gt; View Results">
+                     <font>
+                        <Font size="10.0" />
+                     </font>
+                  </Label>
+                  <ComboBox fx:id="comboDisplayMode" layoutX="42.0" layoutY="30.0" onAction="#displayMode" prefHeight="25.0" prefWidth="150.0" promptText="Select dispaly mode" />
+                  <ComboBox fx:id="DisplayFileCombox" layoutX="199.0" layoutY="30.0" onAction="#displayFile" prefHeight="25.0" prefWidth="150.0" promptText="Select file" />
+                  <ImageView fx:id="ViewImg" fitHeight="356.0" fitWidth="739.0" layoutX="75.0" layoutY="92.0" pickOnBounds="true" preserveRatio="true" />
+                  <TableView fx:id="table" layoutX="10.0" layoutY="68.0" prefHeight="422.0" prefWidth="843.0">
+                    <columns>
+                      <TableColumn fx:id="ColMarker" prefWidth="103.0" text="Marker" />
+                      <TableColumn fx:id="ColChr" prefWidth="125.0" text="Chr" />
+                        <TableColumn fx:id="ColPos" prefWidth="140.0" text="Pos" />
+                        <TableColumn fx:id="Colp" prefWidth="192.0" text="pValue" />
+                        <TableColumn fx:id="Colq" prefWidth="194.0" text="qValue" />
+                        <TableColumn fx:id="ColSignif" prefWidth="88.0" text="Signif" />
+                    </columns>
+                  </TableView>
+               </children>
+            </AnchorPane>
+        </items>
+      </SplitPane>
+   </children>
+</AnchorPane>

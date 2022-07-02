@@ -1,0 +1,14 @@
+marker	chr		pos		p-val			corrected		signif
+chr01_0	chr01	0.0	0.001	0.0065	True
+chr01_1	chr01	10.0	0.001	0.0065	True
+chr01_2	chr01	20.0	0.042	0.1365	False
+chr01_3	chr01	30.0	0.041	0.1365	False
+chr01_4	chr01	40.0	0.219	0.49183333333333334	False
+chr01_5	chr01	50.0	0.361	0.586625	False
+chr01_6	chr01	60.0	0.515	0.7438888888888889	False
+chr01_7	chr01	70.0	0.887	0.936	False
+chr01_8	chr01	80.0	0.277	0.5144285714285715	False
+chr01_9	chr01	90.0	0.227	0.49183333333333334	False
+chr01_10	chr01	100.0	0.913	0.936	False
+chr01_11	chr01	110.0	0.936	0.936	False
+chr01_12	chr01	120.0	0.728	0.936	False
